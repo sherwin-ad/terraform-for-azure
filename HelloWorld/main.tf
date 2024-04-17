@@ -8,11 +8,15 @@ terraform {
 }
 
 provider "azurerm" {
-  features { 
+  features {
   }
+}
+
+variable "azregion" {
+  type = string
 }
 
 resource "azurerm_resource_group" "example" {
   name     = "example"
-  location = "Eastus"
+  location = var.azregion
 }
