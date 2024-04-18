@@ -1,3 +1,4 @@
+# Deploy Azure Windows Virtual Machine
 resource "azurerm_resource_group" "example-rg" {
   name     = "example-rg"
   location = "eastus"
