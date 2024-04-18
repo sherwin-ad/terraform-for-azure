@@ -1,0 +1,3 @@
+variable "azregion" {
+  type = string
+}
