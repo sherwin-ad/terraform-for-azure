@@ -2,6 +2,7 @@ resource "azurerm_resource_group" "example" {
   name     = "example"
   location = var.azregion
 }
+
 /*resource "azurerm_storage_account" "mystorage" {
   count = 2
   name                     = "owenteststorage00${count.index}"
@@ -28,7 +29,7 @@ resource "azurerm_storage_account" "mystorage" {
 
   tags = {
     environment = "staging"
-    owner = "Mr. ${local.name}"
-  }  
+    owner       = "Mr. ${local.name}"
+  }
 }
 
