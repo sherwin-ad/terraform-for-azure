@@ -1,0 +1,1 @@
+azregion = "westus"
